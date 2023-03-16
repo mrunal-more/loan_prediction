@@ -3,10 +3,10 @@ import numpy as np
 import pickle
 import json
 
-with open("artifacts/dict_file.json","r") as file:
+with open('artifacts/dict_file.json','r') as file:
     dict_file = json.load(file)
 
-with open("artifacts/Loan_Pred_Model.pkl","rb") as file:
+with open('artifacts/Loan_Pred_Model.pkl','rb') as file:
     model = pickle.load(file)
 
 app = Flask(__name__)
