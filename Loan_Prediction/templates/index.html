@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Status Prediction</title>
+</head>
+<body style="background-color: #CBDCF7;">
+    <h1> Loan Status Prediction</h1>
+
+
+    <form action="/get_data" method="post">
+        <label>Gender:</label>
+         <input type="radio" name = 'html_gender' value="Male"><label>Male</label>
+         <input type="radio" name = 'html_gender' value="Female"><label>Female</label><br><br>
+        
+
+        <label>Married:</label> 
+         <input type="radio" name = 'html_married' value="Yes"><label>Yes</label>
+         <input type="radio" name = 'html_married' value="No"><label>No</label><br><br>
+
+
+        <label>Dependents:</label> 
+        <select name = 'html_dependents'>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3+">3+</option></select><br><br>
+
+
+        <label>Education:</label> 
+        <select name = 'html_education'>
+            <option value="Graduate">Graduate</option>
+            <option value="Not Graduate">Not Graduate</option></select><br><br>
+
+
+        <label>Self_Employed:</label> 
+        <select name = 'html_self_employed'>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option></select><br><br>
+        
+
+        <label>ApplicantIncome:</label> <input type="number" name = 'html_applicantincome'><label>&emsp; Ex., ApplicantIncome = 25000</label><br><br>
+
+
+        <label>CoapplicantIncome:</label> <input type="number" name = 'html_coapplicantincome'><label>&emsp; Ex., CoapplicantIncome = 18000</label><br><br>
+
+
+        <label>LoanAmount:</label> <input type="number" name = 'html_loanamount'><label>&emsp; Ex., LoanAmount = 130 -- (One Lack Thirty Thousand )</label><br><br>
+
+
+        <label>Loan_Amount_Term:</label> 
+        <select name = 'html_loan_amount_term'>
+            <option value="480">480</option>
+            <option value="360">360</option>
+            <option value="300">300</option>
+            <option value="240">240</option>
+            <option value="180">180</option>
+            <option value="120">120</option>
+            <option value="84">84</option>
+            <option value="60">60</option>
+            <option value="36">36</option>
+            <option value="12">12</option></select><br><br>
+
+
+        <label>Credit_History:</label> 
+         <input type="radio" name = 'html_credit_history' value="1"><label>1</label>
+         <input type="radio" name = 'html_credit_history' value="0"><label>0</label><br><br>
+
+
+        <label>Property_Area:</label> 
+        <select name = 'html_property_area'>
+            <option value="Urban">Urban</option>
+            <option value="Rural">Rural</option>
+            <option value="Semiurban">Semiurban</option></select><br><br>
+
+
+
+        <input type="submit" value="Loan_Status">
+
+
+    </form><br>
+
+    <label>Loan Status Prediction : </label>{{Loan_Status}}
+
+</body>
+</html>
